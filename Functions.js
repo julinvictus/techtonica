@@ -60,12 +60,28 @@ sumAllNumbers("lol",3,4);
 // Write a function that takes in a person's age and returns true if they should get a discount.
 // Otherwise it should return false.
 // Then write some function calls you would use to test your function.
-
+function checkAge(age){
+    if (age <= 14 || age >= 65 ){
+        return true;
+    } else {
+        return false;
+    }
+}
+checkAge(22);
+checkAge(2);
+checkAge(89);
 
 // Exercise 6. Write a function that takes 2 parameters -- one number and one string.
 // The function should print the string the given number of times.
 // Then write some function calls you would use to test your function.
 
+function repeatString(num, string){
+    for (let i=0; i<num; i++ ){
+        console.log(string);
+    }
+}
+repeatString(2, "juliana");
+repeatString(10, "juliana");
 
 // Exercise 7. Read the following code (don't run it yet)
 function mysteryFunction1(p1) {
@@ -78,11 +94,18 @@ console.log("The value of z is " + z);
 
 // Without running the code, write down in a comment:
 // 1. What mysteryFunction1 does 
+// It returns parameter p1 multiplied by 2
+
 // 2. What prints out for the value of y
+// It prints out the number 4
+
 // 3. What prints out for the value of z
+// It prints out the number 8 
+
+
 // Now run the code and see if you're correct.
 // Were you correct? If not, what did you learn?
-
+// Yes :D
 
 
 // Exercise 8. Read the following code (don't run it yet)
@@ -97,10 +120,17 @@ console.log("The value of b is " + b);
 
 // Without running the code, write down in a comment:
 // 1. What mysteryFunction2 does 
+// It subtracts the value of parameter p2 from the value of parameter p1
+
 // 2. What prints out for the value of a
+// It prints out the number 6
+
 // 3. What prints out for the value of b
+// It prints out the number 5
+
 // Now run the code and see if you're correct.
 // Were you correct? If not, what did you learn?
+// Yes :D
 
 
 // Exercise 9. This exercise is to practice reading the documentation for functions.
@@ -111,18 +141,20 @@ console.log("The value of b is " + b);
 // Here's a string I made representing my grocery list.
 // Using split() and groceryList, make an array of my grocery list items
 const groceryList = "eggs,carrots,orange juice"
+groceryList.split(',');
+
 
 // Here's a string I made representing my morning schedule.
 // Using split() and mySchedule, make an array of the *first 2* things I do in the morning
 // There are multiple ways to do this, but try doing it using only the split() function.
 const mySchedule = 'wake up--->brush teeth--->eat breakfast--->go to work'
-
+mySchedule.split('--->', 2);
 
 
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you? 
 // Please answer in a comment below.
-//
+// It was ok, I used browser console to test it and MDN website 
 
 // Email your file to the course staff, 
 // or commit your file to GitHub and email us a link.
